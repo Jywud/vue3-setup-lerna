@@ -1,0 +1,110 @@
+//reset
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-size: 14px;
+    background-color: #f7f7f7;
+    font-family: PingFangSC-Regular, PingFang SC;
+}
+
+p {
+    margin: 0;
+}
+
+ul,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+input,
+textarea {
+    -webkit-appearance: none;
+    resize: none;
+    &::placeholder {
+        color: #999;
+    }
+}
+
+.flex-box {
+    display: flex;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-around {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.flex-end {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.vant-dialog-confirm {
+    border-radius: 4px;
+    .van-dialog__header {
+        font-weight: bold;
+    }
+    .van-dialog__content {
+        .van-dialog__message {
+            color: #333;
+            font-size: 15px;
+            padding: 20px 35px 25px;
+        }
+    }
+    .van-dialog__footer {
+        .van-dialog__cancel {
+            .van-button__text {
+                color: #333333;
+            }
+        }
+        .van-dialog__confirm {
+            color: #0070ff;
+            // .van-button__text {
+            //     color: #0070ff;
+            // }
+        }
+    }
+}
+.van-picker {
+    .van-picker__cancel {
+        color: #0070ff;
+    }
+    .van-picker__confirm {
+        color: #0070ff;
+    }
+}
+
+.van-popup--center {
+    top: 46% !important;
+}

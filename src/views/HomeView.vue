@@ -1,18 +1,25 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-  </div>
+    <div class="home">
+        <HelloWorld msg="hello vue3 ~" />
+        <div>
+            <button class="btn" @click="updateNum">num++</button> {{ num }}
+        </div>
+    </div>
 </template>
 
-<script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+<script setup>
+import { ref } from 'vue';
+import HelloWorld from '@/components/HelloWorld.vue';
 
-export default {
-  name: "HomeView",
-  components: {
-    HelloWorld,
-  },
-};
+let num = ref(1)
+
+let updateNum = () => {
+    num.value++
+}
+
 </script>
+<style scoped>
+.btn {
+    font-size: 20px;
+}
+</style>
